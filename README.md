@@ -1,3 +1,5 @@
+![docker-push](https://github.com/scalytics/TPCH-Docker/workflows/docker-push/badge.svg)
+
 # TPC-H Docker
 TPC-H inside of a Docker Container
 
