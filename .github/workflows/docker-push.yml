@@ -1,8 +1,6 @@
 name: docker-push
 
-on:
-  push:
-    branches: master
+on: push
 
 jobs:
   main:
