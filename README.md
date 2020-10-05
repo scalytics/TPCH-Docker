@@ -5,7 +5,7 @@ The version of the tpc-h generator is the version 2.4.0 and its coming from the 
 
 ## Build Docker 
 ```shell script
-docker build --tag scalytics/tpch:1.0 .
+docker build --tag scalytics/tpch:latest .
 ```
 
 ## Run Docker
@@ -13,7 +13,7 @@ docker build --tag scalytics/tpch:1.0 .
 the data will be allocated in path where you are executing the TPCH
 
 ```shell script
-docker run -it  -v "$(pwd)":/data scalytics/tpch:1.0 -h
+docker run -it  -v "$(pwd)":/data scalytics/tpch:latest -h
 ```
 
 ```shell script
@@ -62,6 +62,6 @@ To generate updates for a SF=1 (1GB), use:
 To execute a shell inside of the docker images
 
 ```shell script
-docker run -it --entrypoint /bin/bash scalytics/tpch:1.0 
+docker run -it --entrypoint /bin/bash scalytics/tpch:latest 
 ```
 
