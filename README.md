@@ -10,12 +10,17 @@ The version of the tpc-h generator is the version 2.4.0 and its coming from the 
 docker build --tag databloom/tpch:latest .
 ```
 
+## Pulling Docker Image
+```bash
+docker pull ghcr.io/databloom-ai/tpch-docker:main
+```
+
 ## Run Docker
 
 the data will be allocated in path where you are executing the TPCH
 
 ```shell script
-docker run -it  -v "$(pwd)":/data databloom/tpch:latest -h
+docker run -it  -v "$(pwd)":/data ghcr.io/databloom-ai/tpch-docker:main -h
 ```
 
 ```shell script
@@ -64,6 +69,6 @@ To generate updates for a SF=1 (1GB), use:
 To execute a shell inside of the docker images
 
 ```shell script
-docker run -it --entrypoint /bin/bash databloom/tpch:latest 
+docker run -it --entrypoint /bin/bash ghcr.io/databloom-ai/tpch-docker:main
 ```
 
